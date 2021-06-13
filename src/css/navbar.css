@@ -1,4 +1,4 @@
-#navbar {
+#navbar, #mobile-hidden-navbar {
     margin-top: 20px;
     text-align: center;
 }
@@ -128,8 +128,21 @@
         display: none;
     }
 
-    #navbar {
+    #mobile-navbar-button {
+        font-size: 20pt;
+        text-align: center;
+        margin: 10px 0 15px 0;
+    }
+
+    #navbar, #mobile-hidden-navbar {
+        transition: max-height 0.2s;
         margin-top: 0;
+        max-height: 300px;
+        overflow: hidden;
+    }
+
+    #mobile-hidden-navbar {
+        max-height: 0;
     }
 
     .navbar-option {

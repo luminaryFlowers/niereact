@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import '../../css/navbar.css';
 import NavbarOption from "./NavbarOption";
 
 function Navbar(props) {
+    const [visibility, setVisibility] = useState(true);
+
+    function mobileVisibility() {
+        return visibility ? "navbar" : "mobile-hidden-navbar";
+    }
+
     function isSelected(title) {
         return title === props.currentPage ? "active-button" : "";
     }
@@ -12,7 +18,13 @@ function Navbar(props) {
 
     return (
         <React.Fragment>
-            <div id="navbar">
+            <div id="mobile-navbar-button">
+                <i className="bi-chevron-expand"
+                   onClick={() => { setVisibility(!visibility); }}/>
+            </div>
+
+
+            <div id={mobileVisibility()}>
                 <div id="navbar-side-flourish1"/>
                 <div id="navbar-side-flourish2"/>
 
