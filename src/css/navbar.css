@@ -1,3 +1,7 @@
+#mobile-navbar-button {
+    display: none;
+}
+
 #navbar, #mobile-hidden-navbar {
     margin-top: 20px;
     text-align: center;
@@ -23,29 +27,22 @@
 }
 
 .navbar-option-extension {
-    margin: 10px;
-    background-color: #B4AF9A;
-}
-
-.navbar-option, .navbar-button {
-    border: none;
     background-color: inherit;
 }
 
 .navbar-option {
+    background-color: #B4AF9A;
+    border: none;
     padding: 0;
-    margin: 0;
+    margin: 0 10px;
     display: inline-flex;
     height: 42px;
     transition: background-color 0.15s, color 0.15s, height 0.15s;
 }
 
-.navbar-option-extension:hover, .active-button {
+.navbar-option-extension:hover .navbar-option, .active-button {
     background-color: #4E4B42;
     color: #B4AF9A;
-}
-
-.navbar-option-extension:hover .navbar-option, .active-button {
     height: 58px;
 }
 
@@ -59,6 +56,7 @@
 }
 
 .navbar-button {
+    background-color: inherit;
     border: none;
     padding: 6px 7px;
     font-size: 20px;
@@ -129,9 +127,11 @@
     }
 
     #mobile-navbar-button {
+        display: inherit;
+        background-color: #B4AF9A;
         font-size: 20pt;
         text-align: center;
-        margin: 10px 0 15px 0;
+        padding: 10px 0 15px 0;
     }
 
     #navbar, #mobile-hidden-navbar {
