@@ -1,0 +1,81 @@
+@keyframes circle1 {
+    25% { width: 17vw; height: 17vw; }
+    50% { width: 15vw; height: 15vw; }
+    75% { width: 16vw; height: 16vw; }
+}
+
+#circle1 {
+    width: 14vw;
+    height: 14vw;
+    animation-name: circle1;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes circle2 {
+    25% { width: 22vw; height: 22vw; }
+    50% { width: 17vw; height: 17vw; }
+    75% { width: 21vw; height: 21vw; }
+}
+
+#circle2 {
+    width: 18vw;
+    height: 18vw;
+    animation-name: circle2;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+.bottom-right-circle{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    border-color: #B4AF9A;
+    border-style: solid;
+    border-right: 0;
+    border-bottom: 0;
+    border-radius: 100% 0 0 0;
+    -moz-border-radius: 100% 0 0 0;
+    -webkit-border-radius: 100% 0 0 0;
+}
+
+@keyframes circle3 {
+    25% { width: 21vw; height: 21vw; }
+    50% { width: 16vw; height: 16vw; }
+    75% { width: 19vw; height: 19vw; }
+}
+
+#circle3 {
+    width: 17vw;
+    height: 17vw;
+    animation-name: circle3;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes circle4 {
+    25% { width: 24vw; height: 24vw; }
+    50% { width: 20vw; height: 20vw; }
+    75% { width: 22vw; height: 22vw; }
+}
+
+#circle4 {
+    width: 19vw;
+    height: 19vw;
+    animation-name: circle4;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+.top-left-circle{
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-color: #B4AF9A;
+    border-style: solid;
+    border-left: 0;
+    border-top: 0;
+    border-radius: 0 0 100% 0;
+    -moz-border-radius: 0 0 100% 0;
+    -webkit-border-radius: 0 0 100% 0;
+}

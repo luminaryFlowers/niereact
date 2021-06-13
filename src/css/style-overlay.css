@@ -1,0 +1,36 @@
+#grid-area:before {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/grid.png);
+    content: '';
+    position: fixed;
+    pointer-events: none;
+}
+
+#grid-area {
+    opacity: 0.06;
+}
+
+#left-shadow:before {
+    top: 0;
+    left: 0;
+    width: 30vw;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+    content: '';
+    position: fixed;
+    pointer-events: none;
+}
+
+#right-shadow:before {
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100vh;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+    content: '';
+    position: fixed;
+    pointer-events: none;
+}

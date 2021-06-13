@@ -1,0 +1,119 @@
+@keyframes line1 {
+    23% { width: 47vw; height: 29vw; }
+    40% { width: 58vw; height: 43vw; }
+    84% { width: 67vw; height: 4vw; }
+}
+
+#line1 {
+    width: 55vw;
+    height: 17vw;
+    border-bottom: 3px solid #B4AF9A;
+    -webkit-transform: rotate(45deg);
+    top: 0;
+    left: 0;
+    position: fixed;
+    animation-name: line1;
+    animation-duration: 68s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes line2 {
+    15% { width: 42vw; height: 20vw; }
+    63% { width: 49vw; height: 30vw; }
+    90% { width: 60vw; height: 8vw; }
+}
+
+#line2 {
+    width: 47vw;
+    height: 12vw;
+    border-bottom: 3px solid #B4AF9A;
+    -webkit-transform: rotate(45deg);
+    top: 0;
+    left: 0;
+    position: fixed;
+    animation-name: line2;
+    animation-duration: 56s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes line3 {
+    27% { width: 45vw; height: 15vw; }
+    49% { width: 39vw; height: 23vw; }
+    71% { width: 57vw; height: 19vw; }
+}
+
+#line3 {
+    width: 53vw;
+    height: 33vw;
+    border-bottom: 3px solid #B4AF9A;
+    -webkit-transform: rotate(45deg);
+    top: 0;
+    left: 0;
+    position: fixed;
+    animation-name: line3;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes line4 {
+    18% { width: 47vw; height: 29vw; }
+    47% { width: 58vw; height: 43vw; }
+    76% { width: 67vw; height: 4vw; }
+}
+
+#line4 {
+    width: 55vw;
+    height: 17vw;
+    border-bottom: 3px solid #B4AF9A;
+    -webkit-transform: rotate(225deg);
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    animation-name: line4;
+    animation-duration: 59s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes line5 {
+    21% { width: 42vw; height: 20vw; }
+    58% { width: 49vw; height: 30vw; }
+    82% { width: 60vw; height: 8vw; }
+}
+
+#line5 {
+    width: 47vw;
+    height: 12vw;
+    border-bottom: 3px solid #B4AF9A;
+    -webkit-transform: rotate(225deg);
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    animation-name: line5;
+    animation-duration: 73s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes line6 {
+    26% { width: 45vw; height: 15vw; }
+    48% { width: 39vw; height: 23vw; }
+    74% { width: 57vw; height: 19vw; }
+}
+
+#line6 {
+    width: 53vw;
+    height: 33vw;
+    border-bottom: 3px solid #B4AF9A;
+    -webkit-transform: rotate(225deg);
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    animation-name: line6;
+    animation-duration: 65s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}

@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Nier Rodin";
+  src: url(../assets/rodin.ttf);
+}
+
+body {
+  margin: 0;
+  background-color: #CDC8B0;
+  font-family: "Nier Rodin", sans-serif;
+  font-size: 12pt;
+  overflow-x: hidden;
+}

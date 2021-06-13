@@ -1,0 +1,6 @@
+#background-shapes {
+    top: 0;
+    left: 0;
+    position: fixed;
+    pointer-events: none;
+}
