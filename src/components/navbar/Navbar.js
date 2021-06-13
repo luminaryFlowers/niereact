@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import '../../css/navbar.css';
 import NavbarOption from "./NavbarOption";
+import NavbarBelowLine from "./NavbarBelowLine";
 
 function Navbar(props) {
     const [visibility, setVisibility] = useState(true);
@@ -36,8 +37,7 @@ function Navbar(props) {
                 ))}
             </div>
 
-            <div className="navbar-below-line"/>
-            <div className="navbar-below-line-decoration"/>
+            <NavbarBelowLine />
         </React.Fragment>
     );
 }

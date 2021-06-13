@@ -4,6 +4,8 @@ import BackgroundShapes from "./aesthetics/BackgroundShapes";
 import Navbar from "./navbar/Navbar";
 
 import UserData from "../userFiles/UserData";
+import NavbarBelowLine from "./navbar/NavbarBelowLine";
+import PageArea from "./pageContents/PageArea";
 
 function getFirstTab(page) {
     let pageTabs = Object.keys(UserData.pageData[page].tabs);
@@ -35,6 +37,10 @@ function Page() {
             <Navbar userData={UserData}
                     currentPage={currentPage}
                     updateCurrentPage={updateCurrentPage}/>
+
+            <PageArea />
+
+            <NavbarBelowLine />
 
             <StyleOverlay />
         </div>
