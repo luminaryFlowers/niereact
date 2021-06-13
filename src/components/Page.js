@@ -1,19 +1,14 @@
+import React, { useState } from 'react';
 import StyleOverlay from "./aesthetics/StyleOverlay";
 import BackgroundShapes from "./aesthetics/BackgroundShapes";
 import Navbar from "./navbar/Navbar";
 
 import UserData from "../userFiles/UserData";
 
-function initializeState(pageTitles) {
-    let currentPage = pageTitles[0];
+function getFirstTab(page) {
+    let pageTabs = Object.keys(UserData.pageData[page].tabs);
 
-    let currentPageTabs = Object.keys(UserData.pageData[currentPage].tabs);
-    let currentTab = currentPageTabs[0];
-
-    return {
-        currentPage: currentPage,
-        currentTab: currentTab
-    };
+    return pageTabs[0];
 }
 
 function Page() {
@@ -21,13 +16,25 @@ function Page() {
 
     let pageTitles = Object.keys(UserData.pageData);
 
-    let state = initializeState(pageTitles);
+    const [currentPage, setCurrentPage] = useState(pageTitles[0])
+    const [currentTab, setCurrentTab] = useState(getFirstTab(currentPage));
+
+    function updateCurrentPage(newPage) {
+        setCurrentPage(newPage);
+        setCurrentTab(getFirstTab(newPage));
+    }
+
+    function updateCurrentTab(newTab) {
+        setCurrentTab(newTab);
+    }
 
     return (
         <div>
             <BackgroundShapes />
 
-            <Navbar />
+            <Navbar userData={UserData}
+                    currentPage={currentPage}
+                    updateCurrentPage={updateCurrentPage}/>
 
             <StyleOverlay />
         </div>

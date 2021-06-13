@@ -1,34 +1,27 @@
 import React from 'react';
 
 import '../../css/navbar.css';
-import ButtonCursor from '../../images/button-cursor.png';
+import NavbarOption from "./NavbarOption";
 
 function Navbar(props) {
+    function isSelected(title) {
+        return title === props.currentPage ? "active-button" : "";
+    }
+
+    let pageTitles = Object.keys(props.userData.pageData);
+
     return (
         <React.Fragment>
             <div id="navbar">
                 <div id="navbar-side-flourish1"/>
                 <div id="navbar-side-flourish2"/>
 
-                <span className="navbar-option-extension">
-                    <button className="navbar-option active-button">
-                        <img className="button-cursor" src={ButtonCursor} alt="Cursor" />
-                        <button className="navbar-button">
-                            <i className="bi-house-fill button-icon" />
-                            <span className="button-text">HOME</span>
-                        </button>
-                    </button>
-                </span>
-
-                <span className="navbar-option-extension">
-                    <button className="navbar-option">
-                        <img className="button-cursor" src={ButtonCursor} alt="Cursor" />
-                        <button className="navbar-button">
-                            <i className="bi-house-fill button-icon" />
-                            <span className="button-text">INTERESTS</span>
-                        </button>
-                    </button>
-                </span>
+                {pageTitles.map(title => (
+                    <NavbarOption icon={props.userData.pageData[title].icon}
+                                  page={title}
+                                  active={isSelected(title)}
+                                  updateCurrentPage={props.updateCurrentPage}/>
+                ))}
             </div>
 
             <div className="navbar-below-line"/>

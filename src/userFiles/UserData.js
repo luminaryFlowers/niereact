@@ -16,6 +16,7 @@ let UserData = {
     title: "NieReact",
     pageData: {
         "Home": {
+            icon: "bi-house-fill",
             format: "text",
             tabs: {
                 "Test": {
@@ -30,6 +31,22 @@ let UserData = {
         },
 
         "Tutorial": {
+            icon: "bi-pencil-fill",
+            format: "html",
+            tabs: {
+                "Test": {
+                    left: <p>hello this is the test block</p>,
+                    right: <p>yes that's right this is the test block</p>
+                },
+                "Other One": {
+                    left: <p>this is the other one</p>,
+                    right: <p>yes that's right this is the other one</p>
+                }
+            }
+        },
+
+        "Questions": {
+            icon: "bi-question-circle-fill",
             format: "html",
             tabs: {
                 "Test": {
@@ -44,6 +61,7 @@ let UserData = {
         },
 
         "Credits": {
+            icon: "bi-person-circle",
             format: "html",
             tabs: {
                 "Test": {

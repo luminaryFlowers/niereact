@@ -40,16 +40,12 @@
     transition: background-color 0.15s, color 0.15s, height 0.15s;
 }
 
-.active-button {
-    height: 58px;
-}
-
 .navbar-option-extension:hover, .active-button {
     background-color: #4E4B42;
     color: #B4AF9A;
 }
 
-.navbar-option-extension:hover .navbar-option {
+.navbar-option-extension:hover .navbar-option, .active-button {
     height: 58px;
 }
 
@@ -124,8 +120,26 @@
 }
 
 @media (max-width: 1199px) {
-    .navbar-below-line-decoration {
-        width: 0;
-        height: 0;
+    .navbar-option-extension:hover .navbar-option, .active-button {
+        height: 42px;
+    }
+
+    .navbar-below-line-decoration, #navbar-side-flourish1, #navbar-side-flourish2 {
+        display: none;
+    }
+
+    #navbar {
+        margin-top: 0;
+    }
+
+    .navbar-option {
+        display: block;
+        width: 100%;
+        text-align: left;
+        margin: 0;
+    }
+
+    .navbar-option-extension {
+        margin: 0;
     }
 }
