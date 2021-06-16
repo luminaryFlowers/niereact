@@ -5,12 +5,12 @@ import '../../css/page-contents-blocks.css';
 function ContentBlock(props) {
     let getImage = () => {
         if(props.data.image) {
-            let imagesDirectory = require(`../../userFiles/images/${props.data.image}`);
+            let image = require(`../../userFiles/images/${props.data.image}`);
 
             return (
                 <React.Fragment>
                     <img className="content-block-image"
-                         src={imagesDirectory.default}
+                         src={image.default}
                          alt="Pic from user data" />
                     <hr className="content-block-image-divider" />
                 </React.Fragment>
