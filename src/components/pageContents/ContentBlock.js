@@ -12,6 +12,7 @@ function ContentBlock(props) {
                     <img className="content-block-image"
                          src={imagesDirectory.default}
                          alt="Pic from user data" />
+                    <hr className="content-block-image-divider" />
                 </React.Fragment>
             );
         }

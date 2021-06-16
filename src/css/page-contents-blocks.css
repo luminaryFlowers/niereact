@@ -12,3 +12,10 @@
     width: 100%;
     box-shadow: 4px 4px #9A9784;
 }
+
+.content-block-image-divider {
+    width: 96%;
+    border: none;
+    border-top: 2px solid #B0AB96;
+    margin: 13px 3px;
+}
