@@ -7,8 +7,8 @@ import '../../css/page-contents.css';
 function PageArea(props) {
     return (
         <React.Fragment>
-            <div id="page-area">
-                <h1 id="page-header">PAGE</h1>
+            <div id="page-area" style={{opacity: props.pageOpacity}}>
+                <h1 id="page-header">{props.currentPage.toUpperCase()}</h1>
 
                 <BlocksArea>
                     <ThirdsBlock>hello</ThirdsBlock>

@@ -20,10 +20,18 @@ function Page() {
 
     const [currentPage, setCurrentPage] = useState(pageTitles[0])
     const [currentTab, setCurrentTab] = useState(getFirstTab(currentPage));
+    const [pageOpacity, setPageOpacity] = useState(1);
 
     function updateCurrentPage(newPage) {
-        setCurrentPage(newPage);
-        setCurrentTab(getFirstTab(newPage));
+        setPageOpacity(0);
+
+        let setNewPage = () => {
+            setCurrentPage(newPage);
+            setCurrentTab(getFirstTab(newPage));
+            setPageOpacity(1);
+        }
+
+        setTimeout(setNewPage, 150);
     }
 
     function updateCurrentTab(newTab) {
@@ -38,7 +46,10 @@ function Page() {
                     currentPage={currentPage}
                     updateCurrentPage={updateCurrentPage}/>
 
-            <PageArea />
+            <PageArea currentPage={currentPage}
+                      currentTab={currentTab}
+                      updateCurrentTab={updateCurrentTab}
+                      pageOpacity={pageOpacity} />
 
             <NavbarBelowLine />
 

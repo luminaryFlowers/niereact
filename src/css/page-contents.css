@@ -1,12 +1,17 @@
 #page-area {
     margin: 0 auto;
     width: 1200px;
+    transition: opacity 0.15s;
 }
 
 .thirds-block {
     width: 33%;
     float: left;
     height: 400px;
+}
+
+.thirds-block-content {
+    padding: 25px;
 }
 
 #page-header {
