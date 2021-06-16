@@ -14,16 +14,25 @@ let UserData = {
             format: "text",
             tabs: {
                 "Test": {
-                    leftHeader: "hi",
-                    left: "hello this is the test block",
-                    rightHeader: "hello",
-                    right: "yes that's right this is the test block"
+                    left: {
+                        header: "left header",
+                        text: "left text",
+                        image: "placeholder-klaus.jpg"
+                    },
+                    right: {
+                        header: "right header",
+                        text: "right text"
+                    }
                 },
                 "Other One": {
-                    leftHeader: "hi",
-                    left: "this is the other one",
-                    rightHeader: "hello",
-                    right: "yes that's right this is the other one"
+                    left: {
+                        header: "left header",
+                        text: "left text"
+                    },
+                    right: {
+                        header: "right header",
+                        text: "right text"
+                    }
                 }
             }
         },
@@ -33,17 +42,25 @@ let UserData = {
             format: "text",
             tabs: {
                 "Test": {
-                    leftHeader: "hi",
-                    left: "2",
-                    rightHeader: "hello",
-                    right: "yes that's right this is the test block"
+                    left: {
+                        header: "left header",
+                        text: "left text"
+                    },
+                    right: {
+                        header: "right header",
+                        text: "right text"
+                    }
                 },
                 "Other One": {
-                    leftHeader: "hi",
-                    left: "this is the other one",
-                    rightHeader: "hello",
-                    right: "yes that's right this is the other one"
-                }
+                    left: {
+                        header: "left header",
+                        text: "left text"
+                    },
+                    right: {
+                        header: "right header",
+                        text: "right text"
+                    }
+                },
             }
         },
 
@@ -52,17 +69,25 @@ let UserData = {
             format: "text",
             tabs: {
                 "Test": {
-                    leftHeader: "hi",
-                    left: "3",
-                    rightHeader: "hello",
-                    right: "yes that's right this is the test block"
+                    left: {
+                        header: "left header",
+                        text: "left text"
+                    },
+                    right: {
+                        header: "right header",
+                        text: "right text"
+                    }
                 },
                 "Other One": {
-                    leftHeader: "hi",
-                    left: "this is the other one",
-                    rightHeader: "hello",
-                    right: "yes that's right this is the other one"
-                }
+                    left: {
+                        header: "left header",
+                        text: "left text"
+                    },
+                    right: {
+                        header: "right header",
+                        text: "right text"
+                    }
+                },
             }
         },
 
@@ -71,19 +96,27 @@ let UserData = {
             format: "text",
             tabs: {
                 "Test": {
-                    leftHeader: "hi",
-                    left: "4",
-                    rightHeader: "hello",
-                    right: "yes that's right this is the test block"
+                    left: {
+                        header: "left header",
+                        text: "left text"
+                    },
+                    right: {
+                        header: "right header",
+                        text: "right text"
+                    }
                 },
                 "Other One": {
-                    leftHeader: "hi",
-                    left: "this is the other one",
-                    rightHeader: "hello",
-                    right: "yes that's right this is the other one"
-                }
+                    left: {
+                        header: "left header",
+                        text: "left text"
+                    },
+                    right: {
+                        header: "right header",
+                        text: "right text"
+                    }
+                },
             }
-        },
+        }
     }
 }
 

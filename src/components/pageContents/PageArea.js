@@ -17,13 +17,11 @@ function PageArea(props) {
                     </ThirdsBlock>
 
                     <ThirdsBlock>
-                        <ContentBlock header={props.pageContent.leftHeader}
-                                      text={props.pageContent.left} />
+                        <ContentBlock data={props.pageContent.left} />
                     </ThirdsBlock>
 
                     <ThirdsBlock>
-                        <ContentBlock header={props.pageContent.rightHeader}
-                                      text={props.pageContent.right} />
+                        <ContentBlock data={props.pageContent.right} />
                     </ThirdsBlock>
                 </BlocksArea>
 

@@ -1,0 +1,14 @@
+.content-block-header {
+    background-color: #4E4B42;
+    color: #CDC8B0;
+    width: 100%;
+}
+
+.content-block-text {
+    padding: 11px 13px;
+}
+
+.content-block-image {
+    width: 100%;
+    box-shadow: 4px 4px #9A9784;
+}

@@ -12,6 +12,11 @@ body {
   overflow-x: hidden;
 }
 
+p {
+  margin: 0;
+  overflow-y: auto;
+}
+
 .clearfix {
   clear: both;
 }
