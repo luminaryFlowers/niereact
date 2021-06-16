@@ -1,5 +1,8 @@
-# niereact
+# NieReact
 
-about half a year ago i made a nier automata themed website and i was like "damn this looks good" 
-but i was also like "holy shit this source code sucks balls" so i figure i'll make it better and also 
-make it so other people can also use this
+About half a year ago, I'd made a NieR:Automata themed website for my personal Twitter account to use in place of a 
+Carrd. I was happy with how it looked, but the source code wasn't very good. I learned how to use React in a group 
+project, liked it, and then figured I should remake the website but with React, and also with an easier to modify
+JSON file. Now you, too, can have a cool NieR website! *Wow!!!!!!!!*
+
+This is gonna be edited later with more info.
