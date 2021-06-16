@@ -49,7 +49,8 @@ function Page() {
             <PageArea currentPage={currentPage}
                       currentTab={currentTab}
                       updateCurrentTab={updateCurrentTab}
-                      pageOpacity={pageOpacity} />
+                      pageOpacity={pageOpacity}
+                      pageContent={UserData.pageData[currentPage].tabs[currentTab]} />
 
             <NavbarBelowLine />
 

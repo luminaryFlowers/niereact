@@ -4,13 +4,7 @@
 
     - a page cannot contain 2 tabs with identical names
       (different pages having the same tab name is ok!)
-
-    - if the format is html, then a tab needs to have
-      only a left and right! the html tags inside of
-      them will be put into the left and right boxes
-      respectively on that tab.
  */
-import React from 'react';
 
 let UserData = {
     title: "NieReact",
@@ -20,60 +14,76 @@ let UserData = {
             format: "text",
             tabs: {
                 "Test": {
+                    leftHeader: "hi",
                     left: "hello this is the test block",
+                    rightHeader: "hello",
                     right: "yes that's right this is the test block"
                 },
                 "Other One": {
+                    leftHeader: "hi",
                     left: "this is the other one",
+                    rightHeader: "hello",
                     right: "yes that's right this is the other one"
                 }
             }
         },
 
         "Tutorial": {
-            icon: "bi-pencil-fill",
-            format: "html",
+            icon: "bi-house-fill",
+            format: "text",
             tabs: {
                 "Test": {
-                    left: <p>hello this is the test block</p>,
-                    right: <p>yes that's right this is the test block</p>
+                    leftHeader: "hi",
+                    left: "2",
+                    rightHeader: "hello",
+                    right: "yes that's right this is the test block"
                 },
                 "Other One": {
-                    left: <p>this is the other one</p>,
-                    right: <p>yes that's right this is the other one</p>
+                    leftHeader: "hi",
+                    left: "this is the other one",
+                    rightHeader: "hello",
+                    right: "yes that's right this is the other one"
                 }
             }
         },
 
         "Questions": {
-            icon: "bi-question-circle-fill",
-            format: "html",
+            icon: "bi-house-fill",
+            format: "text",
             tabs: {
                 "Test": {
-                    left: <p>hello this is the test block</p>,
-                    right: <p>yes that's right this is the test block</p>
+                    leftHeader: "hi",
+                    left: "3",
+                    rightHeader: "hello",
+                    right: "yes that's right this is the test block"
                 },
                 "Other One": {
-                    left: <p>this is the other one</p>,
-                    right: <p>yes that's right this is the other one</p>
+                    leftHeader: "hi",
+                    left: "this is the other one",
+                    rightHeader: "hello",
+                    right: "yes that's right this is the other one"
                 }
             }
         },
 
         "Credits": {
-            icon: "bi-person-circle",
-            format: "html",
+            icon: "bi-house-fill",
+            format: "text",
             tabs: {
                 "Test": {
-                    left: <p>hello this is the test block</p>,
-                    right: <p>yes that's right this is the test block</p>
+                    leftHeader: "hi",
+                    left: "4",
+                    rightHeader: "hello",
+                    right: "yes that's right this is the test block"
                 },
                 "Other One": {
-                    left: <p>this is the other one</p>,
-                    right: <p>yes that's right this is the other one</p>
+                    leftHeader: "hi",
+                    left: "this is the other one",
+                    rightHeader: "hello",
+                    right: "yes that's right this is the other one"
                 }
             }
-        }
+        },
     }
 }
 

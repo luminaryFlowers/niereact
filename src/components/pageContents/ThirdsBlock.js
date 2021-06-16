@@ -1,10 +1,14 @@
 import '../../css/page-contents.css';
 
 function ThirdsBlock(props) {
+    let hasShadow = () => props.shadow ? " content-block-shadow" : "";
+
     return (
         <div className="thirds-block">
             <div className="thirds-block-content">
-                {props.children}
+                <div className={"content-block" + hasShadow()}>
+                    {props.children}
+                </div>
             </div>
         </div>
     );

@@ -3,6 +3,7 @@ import ThirdsBlock from "./ThirdsBlock";
 import BlocksArea from "./BlocksArea";
 
 import '../../css/page-contents.css';
+import ContentBlock from "./ContentBlock";
 
 function PageArea(props) {
     return (
@@ -11,12 +12,24 @@ function PageArea(props) {
                 <h1 id="page-header">{props.currentPage.toUpperCase()}</h1>
 
                 <BlocksArea>
-                    <ThirdsBlock>hello</ThirdsBlock>
-                    <ThirdsBlock>hello</ThirdsBlock>
-                    <ThirdsBlock>hello</ThirdsBlock>
+                    <ThirdsBlock shadow={true}>
+                        hello
+                    </ThirdsBlock>
+
+                    <ThirdsBlock>
+                        <ContentBlock header={props.pageContent.leftHeader}
+                                      text={props.pageContent.left} />
+                    </ThirdsBlock>
+
+                    <ThirdsBlock>
+                        <ContentBlock header={props.pageContent.rightHeader}
+                                      text={props.pageContent.right} />
+                    </ThirdsBlock>
                 </BlocksArea>
 
                 <div className="clearfix"/>
+
+                <hr style={{height: 40, visibility: "hidden"}} />
             </div>
         </React.Fragment>
     );
