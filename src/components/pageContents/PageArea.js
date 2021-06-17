@@ -4,6 +4,8 @@ import BlocksArea from "./BlocksArea";
 
 import '../../css/page-contents.css';
 import ContentBlock from "./ContentBlock";
+import Clearfix from "../Clearfix";
+import MobileBlockDivider from "./MobileBlockDivider";
 
 function PageArea(props) {
     return (
@@ -16,16 +18,20 @@ function PageArea(props) {
                         hello
                     </ThirdsBlock>
 
+                    <MobileBlockDivider />
+
                     <ThirdsBlock>
                         <ContentBlock data={props.pageContent.left} />
                     </ThirdsBlock>
+
+                    <MobileBlockDivider />
 
                     <ThirdsBlock>
                         <ContentBlock data={props.pageContent.right} />
                     </ThirdsBlock>
                 </BlocksArea>
 
-                <div className="clearfix"/>
+                <Clearfix />
 
                 <hr style={{height: 40, visibility: "hidden"}} />
             </div>

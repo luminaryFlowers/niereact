@@ -72,6 +72,10 @@
     box-shadow: 4px 4px #9A9784;
 }
 
+.mobile-content-block-divider {
+    display: none;
+}
+
 @media (max-width: 1199px) {
     #page-area {
         width: auto;
@@ -84,6 +88,13 @@
     .thirds-block {
         width: 100%;
         height: auto;
-        margin-bottom: 15px;
+        float: none;
+    }
+
+    .mobile-content-block-divider {
+        visibility: hidden;
+        height: 20px;
+        display: block;
+        margin: 0;
     }
 }

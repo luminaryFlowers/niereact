@@ -1,4 +1,5 @@
 import '../../css/page-contents.css';
+import Clearfix from "../Clearfix";
 
 function BlocksArea(props) {
     return (
@@ -11,7 +12,8 @@ function BlocksArea(props) {
             <div id="blocks-area">
                 {props.children}
             </div>
-            <div className="clearfix"/>
+
+            <Clearfix />
         </div>
     );
 }
