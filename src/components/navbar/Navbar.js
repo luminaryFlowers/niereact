@@ -5,7 +5,7 @@ import NavbarOption from "./NavbarOption";
 import NavbarBelowLine from "./NavbarBelowLine";
 
 function Navbar(props) {
-    const [visibility, setVisibility] = useState(true);
+    const [visibility, setVisibility] = useState(false);
 
     function mobileVisibility() {
         return visibility ? "navbar" : "mobile-hidden-navbar";
