@@ -33,6 +33,10 @@ p {
   overflow-y: auto;
 }
 
+p, button {
+  font-weight: bold;
+}
+
 .clearfix {
   clear: both;
 }
