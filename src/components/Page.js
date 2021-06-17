@@ -31,7 +31,7 @@ function Page() {
             setPageOpacity(1);
         }
 
-        setTimeout(setNewPage, 150);
+        setTimeout(setNewPage, 230);
     }
 
     function updateCurrentTab(newTab) {

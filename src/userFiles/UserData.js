@@ -14,6 +14,7 @@ let UserData = {
             format: "text",
             tabs: {
                 "Test": {
+                    icon: "",
                     left: {
                         header: "left header",
                         text: "left text",
@@ -25,6 +26,7 @@ let UserData = {
                     }
                 },
                 "Other One": {
+                    icon: "",
                     left: {
                         header: "left header",
                         text: "left text"
@@ -42,6 +44,7 @@ let UserData = {
             format: "text",
             tabs: {
                 "Test": {
+                    icon: "",
                     left: {
                         header: "left header",
                         text: "left text"
@@ -52,60 +55,7 @@ let UserData = {
                     }
                 },
                 "Other One": {
-                    left: {
-                        header: "left header",
-                        text: "left text"
-                    },
-                    right: {
-                        header: "right header",
-                        text: "right text"
-                    }
-                },
-            }
-        },
-
-        "Questions": {
-            icon: "bi-house-fill",
-            format: "text",
-            tabs: {
-                "Test": {
-                    left: {
-                        header: "left header",
-                        text: "left text"
-                    },
-                    right: {
-                        header: "right header",
-                        text: "right text"
-                    }
-                },
-                "Other One": {
-                    left: {
-                        header: "left header",
-                        text: "left text"
-                    },
-                    right: {
-                        header: "right header",
-                        text: "right text"
-                    }
-                },
-            }
-        },
-
-        "Credits": {
-            icon: "bi-house-fill",
-            format: "text",
-            tabs: {
-                "Test": {
-                    left: {
-                        header: "left header",
-                        text: "left text"
-                    },
-                    right: {
-                        header: "right header",
-                        text: "right text"
-                    }
-                },
-                "Other One": {
+                    icon: "",
                     left: {
                         header: "left header",
                         text: "left text"
