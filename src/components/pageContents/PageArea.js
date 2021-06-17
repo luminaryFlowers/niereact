@@ -6,6 +6,7 @@ import '../../css/page-contents.css';
 import ContentBlock from "./ContentBlock";
 import Clearfix from "../Clearfix";
 import MobileBlockDivider from "./MobileBlockDivider";
+import ListBlock from "./listBlock/ListBlock";
 
 function PageArea(props) {
     return (
@@ -15,7 +16,7 @@ function PageArea(props) {
 
                 <BlocksArea>
                     <ThirdsBlock shadow={true}>
-                        hello
+                        <ListBlock />
                     </ThirdsBlock>
 
                     <MobileBlockDivider />

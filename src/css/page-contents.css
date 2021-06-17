@@ -66,10 +66,12 @@
     background-color: #DAD4BB;
     height: 100%;
     width: 100%;
+    overflow-y: auto;
 }
 
 .content-block-shadow {
     box-shadow: 4px 4px #9A9784;
+    overflow-y: hidden;
 }
 
 .mobile-content-block-divider {
