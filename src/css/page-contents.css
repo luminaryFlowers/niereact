@@ -35,7 +35,7 @@
     width: 25px;
     height: 100%;
     float: left;
-    margin-left: 20px;
+    margin-left: 10px;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -46,9 +46,9 @@
 }
 
 #blocks-area {
-    width: calc(100% - 45px);
+    width: calc(100% - 35px);
     float: left;
-    margin-left: 45px;
+    margin-left: 35px;
 }
 
 .thirds-block {
@@ -70,4 +70,20 @@
 
 .content-block-shadow {
     box-shadow: 4px 4px #9A9784;
+}
+
+@media (max-width: 1199px) {
+    #page-area {
+        width: auto;
+    }
+
+    #flourish-and-blocks-area {
+        width: 100%;
+    }
+
+    .thirds-block {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
 }

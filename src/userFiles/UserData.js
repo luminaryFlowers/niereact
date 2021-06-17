@@ -39,7 +39,7 @@ let UserData = {
             }
         },
 
-        "Tutorial": {
+        "テスト": {
             icon: "bi-house-fill",
             format: "text",
             tabs: {
