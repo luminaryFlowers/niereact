@@ -42,6 +42,10 @@
     transition: background-color 0.15s, color 0.15s, height 0.15s;
 }
 
+.active-button {
+    transition: height 0s !important;
+}
+
 .navbar-option-extension:hover .navbar-option, .active-button {
     background-color: #4E4B42;
     color: #B4AF9A;

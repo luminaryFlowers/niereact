@@ -16,6 +16,7 @@ function ContentBlock(props) {
                 </React.Fragment>
             );
         }
+
         return null;
     }
 

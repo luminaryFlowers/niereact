@@ -3,6 +3,22 @@
   src: url(../assets/rodin.ttf);
 }
 
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #DAD4BB;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #B0AB96;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B0AB96;
+}
+
 body {
   margin: 0;
   background-color: #CDC8B0;
