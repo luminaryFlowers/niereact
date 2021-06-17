@@ -24,20 +24,31 @@
     height: 100%;
     width: 5px;
     background-color: #B4AF9A;
-    margin-left: 5px;
+    margin-left: 16px;
     float: left;
+    position: absolute;
+    top: 0;
+    bottom: 0;
 }
 
 #content-flourish-area {
     width: 25px;
-    height: 400px;
-    display: inline-block;
+    height: 100%;
+    float: left;
     margin-left: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+#flourish-and-blocks-area {
+    position: relative;
 }
 
 #blocks-area {
     width: calc(100% - 45px);
-    display: inline-block;
+    float: left;
+    margin-left: 45px;
 }
 
 .thirds-block {
