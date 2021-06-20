@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/niereact/static/css/main.be481493.chunk.css",
+    "main.js": "/niereact/static/js/main.8fd1174d.chunk.js",
+    "main.js.map": "/niereact/static/js/main.8fd1174d.chunk.js.map",
+    "runtime-main.js": "/niereact/static/js/runtime-main.b9507ade.js",
+    "runtime-main.js.map": "/niereact/static/js/runtime-main.b9507ade.js.map",
+    "static/js/2.b6bb621e.chunk.js": "/niereact/static/js/2.b6bb621e.chunk.js",
+    "static/js/2.b6bb621e.chunk.js.map": "/niereact/static/js/2.b6bb621e.chunk.js.map",
+    "index.html": "/niereact/index.html",
+    "static/css/main.be481493.chunk.css.map": "/niereact/static/css/main.be481493.chunk.css.map",
+    "static/js/2.b6bb621e.chunk.js.LICENSE.txt": "/niereact/static/js/2.b6bb621e.chunk.js.LICENSE.txt",
+    "static/media/bootstrap-icons.css": "/niereact/static/media/bootstrap-icons.b0529a3c.woff2",
+    "static/media/placeholder-klaus.jpg": "/niereact/static/media/placeholder-klaus.050391a4.jpg",
+    "static/media/index.css": "/niereact/static/media/rodin.c814c479.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b9507ade.js",
+    "static/js/2.b6bb621e.chunk.js",
+    "static/css/main.be481493.chunk.css",
+    "static/js/main.8fd1174d.chunk.js"
+  ]
+}
