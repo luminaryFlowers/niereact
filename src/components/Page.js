@@ -18,16 +18,18 @@ function Page() {
 
     let pageTitles = Object.keys(UserData.pageData);
 
-    const [currentPage, setCurrentPage] = useState(pageTitles[0])
+    const [currentPage, setCurrentPage] = useState(pageTitles[0]);
+    const [offsetPage, setOffsetPage] = useState(pageTitles[0]);
     const [currentTab, setCurrentTab] = useState(getFirstTab(currentPage));
     const [pageOpacity, setPageOpacity] = useState(1);
 
-    function updateCurrentPage(newPage) {
+    function updateCurrentPage(page) {
         setPageOpacity(0);
+        setOffsetPage(page);
 
         let setNewPage = () => {
-            setCurrentPage(newPage);
-            setCurrentTab(getFirstTab(newPage));
+            setCurrentPage(page);
+            setCurrentTab(getFirstTab(page));
             setPageOpacity(1);
         }
 
@@ -39,7 +41,7 @@ function Page() {
             <BackgroundShapes />
 
             <Navbar userData={UserData}
-                    currentPage={currentPage}
+                    currentPage={offsetPage}
                     updateCurrentPage={updateCurrentPage}/>
 
             <PageArea currentPage={currentPage}

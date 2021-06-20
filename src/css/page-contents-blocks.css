@@ -6,10 +6,12 @@
 
 .content-block-text {
     padding: 11px 13px;
+    transition: opacity 0.15s;
 }
 
 .content-block-image-block {
     padding: 11px 13px 0 13px;
+    transition: opacity 0.15s;
 }
 
 .content-block-image {

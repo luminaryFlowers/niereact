@@ -10,6 +10,19 @@ import ListBlock from "./listBlock/ListBlock";
 
 function PageArea(props) {
     const [contentOpacity, setContentOpacity] = useState(1);
+    const [offsetTab, setOffsetTab] = useState(props.currentTab);
+
+    function updateCurrentTab(tab) {
+        setContentOpacity(0);
+        setOffsetTab(tab);
+
+        let setNewTab = () => {
+            props.updateCurrentTab(tab);
+            setContentOpacity(1);
+        }
+
+        setTimeout(setNewTab, 150);
+    }
 
     return (
         <React.Fragment>
@@ -19,20 +32,22 @@ function PageArea(props) {
                 <BlocksArea>
                     <ThirdsBlock shadow={true}>
                         <ListBlock pageContent={props.pageContent}
-                                   currentTab={props.currentTab}
-                                   updateCurrentTab={props.updateCurrentTab}/>
+                                   currentTab={offsetTab}
+                                   updateCurrentTab={updateCurrentTab}/>
                     </ThirdsBlock>
 
                     <MobileBlockDivider />
 
                     <ThirdsBlock>
-                        <ContentBlock data={props.pageContent[props.currentTab].left} />
+                        <ContentBlock data={props.pageContent[props.currentTab].left}
+                                      contentOpacity={contentOpacity}/>
                     </ThirdsBlock>
 
                     <MobileBlockDivider />
 
                     <ThirdsBlock>
-                        <ContentBlock data={props.pageContent[props.currentTab].right} />
+                        <ContentBlock data={props.pageContent[props.currentTab].right}
+                                      contentOpacity={contentOpacity} />
                     </ThirdsBlock>
                 </BlocksArea>
 

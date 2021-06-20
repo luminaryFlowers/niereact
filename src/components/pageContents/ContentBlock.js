@@ -3,13 +3,16 @@ import React from 'react';
 import '../../css/page-contents-blocks.css';
 
 function ContentBlock(props) {
-    let getImage = () => {
+    function getOpacity() {
+        return {opacity: props.contentOpacity};
+    }
+
+    function getImage() {
         if(props.data.image) {
             let image = require(`../../userFiles/images/${props.data.image}`);
-            {console.log(props.data)}
 
             return (
-                <div className="content-block-image-block">
+                <div className="content-block-image-block" style={getOpacity()}>
                     <img className="content-block-image"
                          src={image.default}
                          alt="Pic from user data" />
@@ -24,10 +27,12 @@ function ContentBlock(props) {
     return (
         <React.Fragment>
             <div className="content-block-header">
-                <p className="content-block-text">{props.data.header}</p>
+                <p className="content-block-text" style={getOpacity()}>
+                    {props.data.header}
+                </p>
             </div>
             {getImage()}
-            <p className="content-block-text">
+            <p className="content-block-text" style={getOpacity()}>
                 {props.data.text}
             </p>
         </React.Fragment>
