@@ -4,7 +4,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 30px;
+  width: 4px;
 }
 
 ::-webkit-scrollbar-track {
@@ -13,9 +13,6 @@
 
 ::-webkit-scrollbar-thumb {
   background: #B0AB96;
-  border: 13px solid rgba(218, 212, 187, 1);
-  border-top: none;
-  border-bottom: none;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -42,4 +39,10 @@ p, button {
 
 .clearfix {
   clear: both;
+}
+
+@media (max-width: 1199px) {
+  body {
+    overflow-y: scroll;
+  }
 }

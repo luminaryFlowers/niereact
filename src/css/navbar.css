@@ -116,9 +116,9 @@
 }
 
 .navbar-below-line-decoration {
-    width: 840px;
     height: 40px;
     background-image: url(../images/underline-decoration.png);
+    background-position: center;
     margin: 0 auto;
     position: relative;
 }
@@ -128,7 +128,7 @@
         height: 42px;
     }
 
-    .navbar-below-line-decoration, #navbar-side-flourish1, #navbar-side-flourish2 {
+    #navbar-side-flourish1, #navbar-side-flourish2 {
         display: none;
     }
 
