@@ -1,5 +1,6 @@
 #content-block-list-contents {
     overflow-y: scroll;
+    overflow-x: hidden;
     height: calc(100% - 32px);
 }
 
@@ -45,8 +46,39 @@
 
 .list-block-option {
     background-color: inherit;
+    padding: 10px 0;
+    margin: 4px 0;
+    transition: background-color 0.15s, color 0.15s;
+    position: relative;
 }
 
-.list-block-option:hover {
+.list-block-option:hover, .list-block-option-selected {
+    background-color: #4E4B42;
+    color: #B4AF9A;
+}
 
+.list-block-option-icon {
+    margin: 0 14px 0 18px;
+    font-size: 17pt;
+}
+
+.list-selection-top, .list-selection-bottom {
+    width: 100%;
+    border-top: 2px solid #4E4B42;
+    border-bottom: none;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.15s;
+}
+
+.list-block-option:hover .list-selection-top, .list-block-option:hover .list-selection-bottom {
+    opacity: 1;
+}
+
+.list-selection-top {
+    margin: -14px 0 0 0;
+}
+
+.list-selection-bottom {
+    margin: 12px 0 0 0;
 }

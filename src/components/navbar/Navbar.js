@@ -31,6 +31,7 @@ function Navbar(props) {
 
                 {pageTitles.map(title => (
                     <NavbarOption icon={props.userData.pageData[title].icon}
+                                  key={title}
                                   page={title}
                                   active={isSelected(title)}
                                   updateCurrentPage={props.updateCurrentPage}/>

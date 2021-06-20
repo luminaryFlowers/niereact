@@ -14,26 +14,26 @@ let UserData = {
             format: "text",
             tabs: {
                 "Test": {
-                    icon: "",
+                    icon: "bi-archive",
                     left: {
                         header: "left header",
-                        text: "left text",
+                        text: "left textt",
                         image: "placeholder-klaus.jpg"
                     },
                     right: {
                         header: "right header",
-                        text: "right text"
+                        text: "right textttt"
                     }
                 },
                 "Other One": {
-                    icon: "",
+                    icon: "bi-archive",
                     left: {
                         header: "left header",
-                        text: "left text"
+                        text: "left textm"
                     },
                     right: {
                         header: "right header",
-                        text: "right text"
+                        text: "right textm"
                     }
                 }
             }
@@ -44,25 +44,25 @@ let UserData = {
             format: "text",
             tabs: {
                 "Test": {
-                    icon: "",
+                    icon: "bi-archive",
                     left: {
                         header: "left header",
-                        text: "left text"
+                        text: "left texte"
                     },
                     right: {
                         header: "right header",
-                        text: "right text"
+                        text: "right texte"
                     }
                 },
                 "Other One": {
-                    icon: "",
+                    icon: "bi-archive",
                     left: {
                         header: "left header",
-                        text: "left text"
+                        text: "left textr"
                     },
                     right: {
                         header: "right header",
-                        text: "right text"
+                        text: "right textr"
                     }
                 },
             }

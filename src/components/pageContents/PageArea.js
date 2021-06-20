@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ThirdsBlock from "./ThirdsBlock";
 import BlocksArea from "./BlocksArea";
 
@@ -9,6 +9,8 @@ import MobileBlockDivider from "./MobileBlockDivider";
 import ListBlock from "./listBlock/ListBlock";
 
 function PageArea(props) {
+    const [contentOpacity, setContentOpacity] = useState(1);
+
     return (
         <React.Fragment>
             <div id="page-area" style={{opacity: props.pageOpacity}}>
@@ -16,19 +18,21 @@ function PageArea(props) {
 
                 <BlocksArea>
                     <ThirdsBlock shadow={true}>
-                        <ListBlock />
+                        <ListBlock pageContent={props.pageContent}
+                                   currentTab={props.currentTab}
+                                   updateCurrentTab={props.updateCurrentTab}/>
                     </ThirdsBlock>
 
                     <MobileBlockDivider />
 
                     <ThirdsBlock>
-                        <ContentBlock data={props.pageContent.left} />
+                        <ContentBlock data={props.pageContent[props.currentTab].left} />
                     </ThirdsBlock>
 
                     <MobileBlockDivider />
 
                     <ThirdsBlock>
-                        <ContentBlock data={props.pageContent.right} />
+                        <ContentBlock data={props.pageContent[props.currentTab].right} />
                     </ThirdsBlock>
                 </BlocksArea>
 

@@ -34,10 +34,6 @@ function Page() {
         setTimeout(setNewPage, 230);
     }
 
-    function updateCurrentTab(newTab) {
-        setCurrentTab(newTab);
-    }
-
     return (
         <div>
             <BackgroundShapes />
@@ -48,9 +44,9 @@ function Page() {
 
             <PageArea currentPage={currentPage}
                       currentTab={currentTab}
-                      updateCurrentTab={updateCurrentTab}
+                      updateCurrentTab={setCurrentTab}
                       pageOpacity={pageOpacity}
-                      pageContent={UserData.pageData[currentPage].tabs[currentTab]} />
+                      pageContent={UserData.pageData[currentPage].tabs} />
 
             <NavbarBelowLine />
 
