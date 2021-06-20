@@ -20,10 +20,15 @@ function Page() {
 
     const [currentPage, setCurrentPage] = useState(pageTitles[0]);
     const [offsetPage, setOffsetPage] = useState(pageTitles[0]);
+    const [pageTimeoutID, setPageTimeoutID] = useState(null);
+
     const [currentTab, setCurrentTab] = useState(getFirstTab(currentPage));
+
     const [pageOpacity, setPageOpacity] = useState(1);
 
     function updateCurrentPage(page) {
+        clearTimeout(pageTimeoutID);
+
         setPageOpacity(0);
         setOffsetPage(page);
 
@@ -31,9 +36,11 @@ function Page() {
             setCurrentPage(page);
             setCurrentTab(getFirstTab(page));
             setPageOpacity(1);
+
+            setPageTimeoutID(null);
         }
 
-        setTimeout(setNewPage, 230);
+        setPageTimeoutID(setTimeout(setNewPage, 230));
     }
 
     return (
