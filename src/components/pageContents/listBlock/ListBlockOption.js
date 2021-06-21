@@ -4,7 +4,7 @@ function ListBlockOption(props) {
              onClick={props.updateCurrentTab}>
             <hr className="list-selection-top"/>
             <p>
-                <i className={props.icon + " list-block-option-icon"} />
+                <i className={"bi-" + props.icon + " list-block-option-icon"} />
                 {props.tab}
             </p>
             <hr className="list-selection-bottom"/>

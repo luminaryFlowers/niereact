@@ -24,6 +24,22 @@ function PageArea(props) {
         setTimeout(setNewTab, 150);
     }
 
+    function getLeftBlock() {
+        if(props.pageContent[props.currentTab]) {
+            return <ContentBlock data={props.pageContent[props.currentTab].left}
+                                 contentOpacity={contentOpacity}/>;
+        }
+        return null;
+    }
+
+    function getRightBlock() {
+        if(props.pageContent[props.currentTab]) {
+            return <ContentBlock data={props.pageContent[props.currentTab].right}
+                                 contentOpacity={contentOpacity} />;
+        }
+        return null;
+    }
+
     return (
         <React.Fragment>
             <div id="page-area" style={{opacity: props.pageOpacity}}>
@@ -39,15 +55,13 @@ function PageArea(props) {
                     <MobileBlockDivider />
 
                     <ThirdsBlock>
-                        <ContentBlock data={props.pageContent[props.currentTab].left}
-                                      contentOpacity={contentOpacity}/>
+                        {getLeftBlock()}
                     </ThirdsBlock>
 
                     <MobileBlockDivider />
 
                     <ThirdsBlock>
-                        <ContentBlock data={props.pageContent[props.currentTab].right}
-                                      contentOpacity={contentOpacity} />
+                        {getRightBlock()}
                     </ThirdsBlock>
                 </BlocksArea>
 

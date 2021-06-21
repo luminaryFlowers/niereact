@@ -28,6 +28,11 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 p {
   margin: 0;
   overflow-y: auto;

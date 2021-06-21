@@ -27,7 +27,9 @@ function Page() {
     const [pageOpacity, setPageOpacity] = useState(1);
 
     function updateCurrentPage(page) {
-        clearTimeout(pageTimeoutID);
+        if(pageTimeoutID) {
+            clearTimeout(pageTimeoutID);
+        }
 
         setPageOpacity(0);
         setOffsetPage(page);

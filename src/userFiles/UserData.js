@@ -11,11 +11,11 @@ let UserData = {
     pageData: {
 		
         "Home": {
-            icon: "bi-house-fill",
-            format: "text",
+            icon: "house-fill",
             tabs: {
+
                 "NieReact": {
-                    icon: "bi-house-fill",
+                    icon: "house-fill",
                     left: {
                         header: "Welcome",
                         text: "This is a sample website for NieReact! This website contains a guide on how to get your own NieR:Automata themed website up and running."
@@ -28,7 +28,7 @@ let UserData = {
                 },
 				
                 "What is NieReact?": {
-                    icon: "bi-question-circle-fill",
+                    icon: "question-circle-fill",
                     left: {
                         header: "What is it?",
                         text: "NieReact is a NieR:Automata themed website template that was created using React. "
@@ -39,55 +39,62 @@ let UserData = {
                     }
                 },
 				
-				"Features": {
-					icon: "bi-book-fill",
+				"Who made it?": {
+					icon: "question-circle-fill",
                     left: {
-					    header: "hi",
-                        text: "hi"
+					    header: "Me",
+                        text: <span>
+                            You can find me on Twitter <a href="https://twitter.com/_lumens">@_lumens</a>,
+                            or on GitHub at <a href="https://github.com/tortoisetea">tortoisetea</a>.<br />
+                            (both of those are links by the way)
+					    </span>
                     },
                     right: {
 					    header: "hi",
                         text: "hello"
                     }
 				}
+
             }
         },
 
-        "Prereqs": {
-            icon: "bi-house-fill",
-            format: "text",
+        "Features": {
+            icon: "house-fill",
             tabs: {
-                "Test": {
-                    icon: "bi-archive",
+
+                "NieReact": {
+                    icon: "house-fill",
                     left: {
-                        header: "left header",
-                        text: "left texte"
+                        header: "e",
+                        text: "e"
                     },
                     right: {
-                        header: "right header",
-                        text: "right texte"
+                        header: "e",
+                        text: "e"
                     }
                 },
-                "Other One": {
-                    icon: "bi-archive",
+
+                "test2": {
+                    icon: "house-fill",
                     left: {
-                        header: "left header",
-                        text: "left textr"
+                        header: "e",
+                        text: "e"
                     },
                     right: {
-                        header: "right header",
-                        text: "right textr"
+                        header: "e",
+                        text: "e"
                     }
-                },
+                }
+
             }
         },
 		
 		"Tutorial": {
-            icon: "bi-house-fill",
-            format: "text",
+            icon: "book-fill",
             tabs: {
+
                 "Test": {
-                    icon: "bi-archive",
+                    icon: "archive",
                     left: {
                         header: "left header",
                         text: "left texte"
@@ -98,7 +105,7 @@ let UserData = {
                     }
                 },
                 "Other One": {
-                    icon: "bi-archive",
+                    icon: "archive",
                     left: {
                         header: "left header",
                         text: "left textr"
@@ -107,16 +114,17 @@ let UserData = {
                         header: "right header",
                         text: "right textr"
                     }
-                },
+                }
+
             }
         },
 		
-		"Credits": {
-            icon: "bi-house-fill",
-            format: "text",
+		"Extra": {
+            icon: "plus-circle-fill",
             tabs: {
-                "Test": {
-                    icon: "bi-archive",
+
+                "Testt": {
+                    icon: "archive",
                     left: {
                         header: "left header",
                         text: "left texte"
@@ -126,8 +134,9 @@ let UserData = {
                         text: "right texte"
                     }
                 },
+
                 "Other One": {
-                    icon: "bi-archive",
+                    icon: "archive",
                     left: {
                         header: "left header",
                         text: "left textr"
@@ -136,7 +145,8 @@ let UserData = {
                         header: "right header",
                         text: "right textr"
                     }
-                },
+                }
+
             }
         }
 		

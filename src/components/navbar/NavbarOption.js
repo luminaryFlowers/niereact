@@ -7,7 +7,7 @@ function NavbarOption(props) {
             <div className={"navbar-option " + props.active}>
                 <img className="button-cursor" src={ButtonCursor} alt="Cursor" />
                 <button className="navbar-button">
-                    <i className={props.icon + " button-icon"} />
+                    <i className={"bi-" + props.icon + " button-icon"} />
                     <span className="button-text">{props.page.toUpperCase()}</span>
                 </button>
             </div>
