@@ -23,6 +23,7 @@ function Page() {
     const [pageTimeoutID, setPageTimeoutID] = useState(null);
 
     const [currentTab, setCurrentTab] = useState(getFirstTab(currentPage));
+    const [offsetTab, setOffsetTab] = useState(getFirstTab(currentPage));
 
     const [pageOpacity, setPageOpacity] = useState(1);
 
@@ -37,6 +38,7 @@ function Page() {
         let setNewPage = () => {
             setCurrentPage(page);
             setCurrentTab(getFirstTab(page));
+            setOffsetTab(getFirstTab(page));
             setPageOpacity(1);
 
             setPageTimeoutID(null);
@@ -56,6 +58,8 @@ function Page() {
             <PageArea currentPage={currentPage}
                       currentTab={currentTab}
                       updateCurrentTab={setCurrentTab}
+                      offsetTab={offsetTab}
+                      updateOffsetTab={setOffsetTab}
                       pageOpacity={pageOpacity}
                       pageContent={UserData.pageData[currentPage].tabs} />
 

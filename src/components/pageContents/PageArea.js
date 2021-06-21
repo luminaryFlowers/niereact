@@ -10,11 +10,10 @@ import ListBlock from "./listBlock/ListBlock";
 
 function PageArea(props) {
     const [contentOpacity, setContentOpacity] = useState(1);
-    const [offsetTab, setOffsetTab] = useState(props.currentTab);
 
     function updateCurrentTab(tab) {
         setContentOpacity(0);
-        setOffsetTab(tab);
+        props.updateOffsetTab(tab);
 
         let setNewTab = () => {
             props.updateCurrentTab(tab);
@@ -48,7 +47,7 @@ function PageArea(props) {
                 <BlocksArea>
                     <ThirdsBlock shadow={true}>
                         <ListBlock pageContent={props.pageContent}
-                                   currentTab={offsetTab}
+                                   currentTab={props.offsetTab}
                                    updateCurrentTab={updateCurrentTab}/>
                     </ThirdsBlock>
 
