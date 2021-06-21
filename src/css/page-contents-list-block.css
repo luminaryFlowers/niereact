@@ -46,7 +46,7 @@
 
 .list-block-option {
     background-color: inherit;
-    padding: 10px 0;
+    padding: 10px 0 12px 0;
     margin: 4px 0;
     transition: background-color 0.15s, color 0.15s;
     position: relative;
@@ -60,6 +60,7 @@
 .list-block-option-icon {
     margin: 0 14px 0 18px;
     font-size: 17pt;
+    vertical-align: bottom;
 }
 
 .list-selection-top, .list-selection-bottom {
@@ -80,5 +81,5 @@
 }
 
 .list-selection-bottom {
-    margin: 12px 0 0 0;
+    margin: 14px 0 0 0;
 }

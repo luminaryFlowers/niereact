@@ -5,7 +5,8 @@
 }
 
 .content-block-text {
-    padding: 11px 13px;
+    padding: 10px 13px;
+    line-height: 140%;
     transition: opacity 0.15s;
 }
 
