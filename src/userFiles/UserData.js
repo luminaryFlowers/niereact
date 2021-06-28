@@ -140,15 +140,15 @@ let UserData = {
                     }
                 },
 
-                "Clone Repository": {
+                "Local Setup": {
                     icon: "star-fill",
                     left: {
-                        header: "Clone Repository",
-                        text: ""
+                        header: "Local Setup",
+                        text: "First, you'll need to clone the GitHub repository to your computer. Then, you'll need to open a command prompt in that directory, and run \"npm install\". Please note that this step may take a bit."
                     },
                     right: {
-                        header: "Note",
-                        text: "If the repository isn't (your GitHub username).github.io, then the link to your website will be (your GitHub username).github.io/(repository name)."
+                        header: "Post-setup",
+                        text: "After letting that install, you'll need to go into the package.json file and change the \"homepage\" value from my homepage's URL to yours. The \"Fork Repository\" step has a note on what your URL will be."
                     }
                 },
 
