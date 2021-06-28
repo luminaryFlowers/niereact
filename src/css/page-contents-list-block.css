@@ -63,6 +63,10 @@
     vertical-align: bottom;
 }
 
+.list-block-text {
+    pointer-events: none;
+}
+
 .list-selection-top, .list-selection-bottom {
     width: 100%;
     border-top: 2px solid #4E4B42;

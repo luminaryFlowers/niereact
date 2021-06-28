@@ -31,7 +31,7 @@ let UserData = {
                     icon: "question-circle-fill",
                     left: {
                         header: "What is it?",
-                        text: "NieReact is a NieR:Automata themed website template that was created using React. "
+                        text: "NieReact is a NieR:Automata themed website template that was created using React."
                     },
                     right: {
                         header: "Why is it?",
@@ -43,11 +43,10 @@ let UserData = {
 					icon: "question-circle-fill",
                     left: {
 					    header: "Me",
-                        text: <span>
+                        text: <p>
                             You can find me on Twitter <a href="https://twitter.com/_lumens">@_lumens</a>,
                             or on GitHub at <a href="https://github.com/tortoisetea">tortoisetea</a>.<br />
-                            (both of those are links by the way)
-					    </span>
+					    </p>
                     },
                     right: {
 					    header: "hi",
@@ -59,14 +58,14 @@ let UserData = {
         },
 
         "Features": {
-            icon: "house-fill",
+            icon: "tools",
             tabs: {
 
-                "NieReact": {
+                "General Overview": {
                     icon: "house-fill",
                     left: {
-                        header: "e",
-                        text: "e"
+                        header: "Overview",
+                        text: "The "
                     },
                     right: {
                         header: "e",
@@ -93,34 +92,83 @@ let UserData = {
             icon: "book-fill",
             tabs: {
 
-                "Test": {
-                    icon: "archive",
+                "Preface": {
+                    icon: "book-fill",
                     left: {
-                        header: "left header",
-                        text: "left texte"
+                        header: "Preface",
+                        text: "This tutorial will mostly focus on how to use NieReact, and will not go into much depth on things such as GitHub repository cloning, or installing Node, Git and the like. There are a great amount of resources on these topics already, so I figured it would be a little bit redundant."
                     },
                     right: {
-                        header: "right header",
-                        text: "right texte"
+                        header: "Preface",
+                        text: "I probably won't be able to help with installing things (it's been a while since I had to), but if you encounter any issues/bugs with NieReact itself, feel free to contact me!"
                     }
                 },
-                "Other One": {
-                    icon: "archive",
+
+                "Requirements": {
+                    icon: "file-earmark-arrow-down-fill",
                     left: {
-                        header: "left header",
-                        text: "left textr"
+                        header: "App Requirements",
+                        text: <p>
+                            - Git <br/>
+                            - Node <br/>
+                            - A text editor (Notepad works but Notepad++ is nicer)
+                        </p>
                     },
                     right: {
-                        header: "right header",
-                        text: "right textr"
+                        header: "Other Requirements",
+                        text: <p>
+                            - A GitHub account <br/>
+                            - Time <br/>
+                            - (Optional) HTML knowledge
+                        </p>
+                    }
+                },
+
+                "Fork Repository": {
+                    icon: "star-fill",
+                    left: {
+                        header: "Fork Repository",
+                        text: <p>
+                            Once you've met the requirements, you can fork the <a href="https://github.com/tortoisetea/niereact">NieReact repository</a>,
+                            and then rename the repository to whatever you'd like. I'd recommend naming it (your GitHub username).github.io, as that will
+                            make that the link to your website.
+                        </p>
+                    },
+                    right: {
+                        header: "Note",
+                        text: "If the repository isn't (your GitHub username).github.io, then the link to your website will be (your GitHub username).github.io/(repository name)."
+                    }
+                },
+
+                "Clone Repository": {
+                    icon: "star-fill",
+                    left: {
+                        header: "Clone Repository",
+                        text: ""
+                    },
+                    right: {
+                        header: "Note",
+                        text: "If the repository isn't (your GitHub username).github.io, then the link to your website will be (your GitHub username).github.io/(repository name)."
+                    }
+                },
+
+                "User Files": {
+                    icon: "star-fill",
+                    left: {
+                        header: "User Files",
+                        text: "Inside of the \"src\" folder of the newly forked"
+                    },
+                    right: {
+                        header: "Other Requirements",
+                        text: ""
                     }
                 }
 
             }
         },
 		
-		"Extra": {
-            icon: "plus-circle-fill",
+		"Contact": {
+            icon: "person-fill",
             tabs: {
 
                 "Testt": {
