@@ -35,7 +35,7 @@ let UserData = {
                     },
                     right: {
                         header: "Overview",
-                        text: "You don't need to know how to code to use it! It'll just take a bit to set up if you've never worked with any of the stuff before. Also this website doesn't have guides for setting up anything beyond NieReact itself, sorry!"
+                        text: "You don't need to know how to code to use it! It'll just take a bit to set up if you've never worked with any of the stuff before. Also this website doesn't have guides for setting up Node.js or your GitHub account, sorry! Shouldn't be too tough though!"
                     }
                 },
 
@@ -62,7 +62,7 @@ let UserData = {
                     icon: "book-fill",
                     left: {
                         header: "Preface",
-                        text: "This tutorial will mostly focus on how to use NieReact, and will not go into much depth on things such as GitHub repository cloning, or installing Node, Git and the like. There are a great amount of resources on these topics already, so I figured it would be a little bit redundant."
+                        text: "This tutorial will mostly focus on how to use NieReact, and will not go into much depth on GitHub or installing Node.js, but there's a wealth of resources on these sorts of things online!"
                     },
                     right: {
                         header: "Preface",
@@ -75,9 +75,8 @@ let UserData = {
                     left: {
                         header: "App Requirements",
                         text: <p>
-                            - Git <br/>
-                            - Node <br/>
-                            - A text editor (Notepad works but Notepad++ is nicer)
+                            - Node.js <br/>
+                            - A text editor (Notepad works but Notepad++ is nicer) (Something like VSCode or WebStorm would also be able to catch syntax errors, but it might be a bit silly to bother if you're not using it for anything but NieReact!)
                         </p>
                     },
                     right: {
@@ -90,31 +89,27 @@ let UserData = {
                     }
                 },
 
-                "1. Fork Repository": {
+                "1. Repository": {
                     icon: "star-fill",
                     left: {
-                        header: "Fork Repository",
-                        text: <p>
-                            Once you've met the requirements, you can fork the <a href="https://github.com/tortoisetea/niereact">&gt;NieReact repository&lt;</a>,
-                            and then rename the repository to whatever you'd like. I'd recommend naming it (your GitHub username).github.io, as that will
-                            make that the link to your website.
-                        </p>
+                        header: "Create Repository",
+                        text: "First, you'll need to create a repository on GitHub. I'd recommend naming it (your GitHub username).github.io, because otherwise, the link to your website will be (your GitHub username).github.io/(repository name)."
                     },
                     right: {
-                        header: "Note",
-                        text: "If the repository isn't (your GitHub username).github.io, then the link to your website will be (your GitHub username).github.io/(repository name)."
+                        header: "Add gh-pages branch",
+                        text: "Once you've created the repository, enter it, and then click on the button containing \"master\" (to the left of where it says \"1 branch\"), and, in the text field saying \"find or create branch\", create a branch named gh-pages. We'll go back here later!"
                     }
                 },
 
-                "2. Local Setup": {
+                "2. Download & Setup": {
                     icon: "star-fill",
                     left: {
-                        header: "Local Setup",
-                        text: "First, you'll need to clone the GitHub repository to your computer. Then, you'll need to open a command prompt in that directory, and run \"npm install\". Please note that this step may take a bit."
+                        header: "Download & setup",
+                        text: <p>Download niereact-v1.0.zip from <a href="https://github.com/tortoisetea/niereact/releases/tag/v1.0">&gt;here&lt;</a>, and unzip. Then, you'll need to open a command prompt in the niereact folder, and run "npm install". Please note that this step may take a bit.</p>
                     },
                     right: {
-                        header: "Post-setup",
-                        text: "After letting that install, you'll need to go into the package.json file in the cloned repository's folder and change the \"homepage\" value from my homepage's URL to yours. The \"Fork Repository\" step has a note on what your URL will be."
+                        header: "Previewing the site",
+                        text: "If you want to preview the site while you're working on it, open a command prompt and run \"npm start\". The page will update every time you save, which is very handy!"
                     }
                 },
 
@@ -264,13 +259,12 @@ let UserData = {
                 "10. Making It Live": {
                     icon: "star-fill",
                     left: {
-                        header: "Making it live",
-                        text: "Open up a command prompt in the main directory (the one with the \"src\" and \"public\" folder and such), and type \"npm run deploy\". This will probably take a while, so don't stress if it does! You also repeat this step if you end up making changes to the UserData.js."
+                        header: "Build it",
+                        text: "Open up a command prompt in the main directory (the one with the \"src\" and \"public\" folder and such), and type \"npm run build\". This will probably take a while, so don't stress if it does! Once it's completed, open the newly created build folder."
                     },
                     right: {
-                        header: "Done",
-                        image: "placeholder-klaus.jpg",
-                        text: "If you followed all previous steps, the website should be up and running!"
+                        header: "Upload the build",
+                        text: "In the gh-pages branch of your repository, click on \"Add file\", then \"Upload files\". From here, drag and drop everything in the build folder into the upload area, and choose \"Commit changes\". If everything went right, your website should be good to go! It might take a bit to update though, so you may need to wait a few minutes."
                     }
                 }
 
