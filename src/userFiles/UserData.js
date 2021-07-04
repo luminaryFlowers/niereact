@@ -26,62 +26,28 @@ let UserData = {
                         image: "placeholder-klaus.jpg"
                     }
                 },
-				
-                "What is NieReact?": {
-                    icon: "question-circle-fill",
-                    left: {
-                        header: "What is it?",
-                        text: "NieReact is a NieR:Automata themed website template that was created using React."
-                    },
-                    right: {
-                        header: "Why is it?",
-                        text: "I made a website just like this in December of 2020, but I didn't really bother making the code good at all. I wanted to make it better, and figured I'd do it in React as a learning experience sort of deal."
-                    }
-                },
-				
-				"Who made it?": {
-					icon: "question-circle-fill",
-                    left: {
-					    header: "Me",
-                        text: <p>
-                            You can find me on Twitter <a href="https://twitter.com/_lumens">@_lumens</a>,
-                            or on GitHub at <a href="https://github.com/tortoisetea">tortoisetea</a>.<br />
-					    </p>
-                    },
-                    right: {
-					    header: "hi",
-                        text: "hello"
-                    }
-				}
-
-            }
-        },
-
-        "Features": {
-            icon: "tools",
-            tabs: {
 
                 "General Overview": {
-                    icon: "house-fill",
+                    icon: "question-circle-fill",
                     left: {
                         header: "Overview",
-                        text: "The "
+                        text: "NieReact is a React-based website template with a relatively easy-to-use data file for easily making your own NieR:Automata themed website."
                     },
                     right: {
-                        header: "e",
-                        text: "e"
+                        header: "Overview",
+                        text: "You don't need to know how to code to use it! It'll just take a bit to set up if you've never worked with any of the stuff before. Also this website doesn't have guides for setting up anything beyond NieReact itself, sorry!"
                     }
                 },
 
-                "test2": {
-                    icon: "house-fill",
+                "Small Notes": {
+                    icon: "question-circle-fill",
                     left: {
-                        header: "e",
-                        text: "e"
+                        header: "Who made it?",
+                        text: "I did! Me! Wow! I'm Aidan, but I also go by Dave online, but I'm also using the name Lumen, or lumens, for coding accounts. You can find info on how to contact me, or look at my GitHub, or buy me a coffee, on the contact page!"
                     },
                     right: {
-                        header: "e",
-                        text: "e"
+                        header: "Site practices",
+                        text: "On this site, if you see anything enclosed in >this sort of thing<, that'll be a link. Not this time though, but every other time."
                     }
                 }
 
@@ -124,12 +90,12 @@ let UserData = {
                     }
                 },
 
-                "Fork Repository": {
+                "1. Fork Repository": {
                     icon: "star-fill",
                     left: {
                         header: "Fork Repository",
                         text: <p>
-                            Once you've met the requirements, you can fork the <a href="https://github.com/tortoisetea/niereact">NieReact repository</a>,
+                            Once you've met the requirements, you can fork the <a href="https://github.com/tortoisetea/niereact">&gt;NieReact repository&lt;</a>,
                             and then rename the repository to whatever you'd like. I'd recommend naming it (your GitHub username).github.io, as that will
                             make that the link to your website.
                         </p>
@@ -140,7 +106,7 @@ let UserData = {
                     }
                 },
 
-                "Local Setup": {
+                "2. Local Setup": {
                     icon: "star-fill",
                     left: {
                         header: "Local Setup",
@@ -148,19 +114,163 @@ let UserData = {
                     },
                     right: {
                         header: "Post-setup",
-                        text: "After letting that install, you'll need to go into the package.json file and change the \"homepage\" value from my homepage's URL to yours. The \"Fork Repository\" step has a note on what your URL will be."
+                        text: "After letting that install, you'll need to go into the package.json file in the cloned repository's folder and change the \"homepage\" value from my homepage's URL to yours. The \"Fork Repository\" step has a note on what your URL will be."
                     }
                 },
 
-                "User Files": {
+                "3. User Files": {
                     icon: "star-fill",
                     left: {
                         header: "User Files",
-                        text: "Inside of the \"src\" folder of the newly forked"
+                        image: "user-files.jpg",
+                        text: "Inside of the \"userFiles\" folder in the \"src\" folder, you'll find the UserData.js file, and the images folder."
                     },
                     right: {
-                        header: "Other Requirements",
-                        text: ""
+                        header: "User Files",
+                        text: "You'll put any images that you want displayed inside of the images folder. I recommend a 16:9 aspect ratio jpg file, but any file type works! Inside of UserData.js, however, is where all of the site information goes, including pages, and what tabs those pages have."
+                    }
+                },
+
+                "4. What Is UserData.js?": {
+                    icon: "star-fill",
+                    left: {
+                        header: "What is UserData.js?",
+                        text: "UserData.js is a JavaScript file, and contains all of the website's \"data.\" By that, I mean that all of the website's contents, including pages and tabs, are formed from this file. This means that you can use this website template without knowing how to use JavaScript! (Hopefully!)"
+                    },
+                    right: {
+                        header: "How do I use it?",
+                        text: "You'll need to open the file in a text editor. Notepad works just fine, but you might find it easier to edit with Notepad++."
+                    }
+                },
+
+                "5a. Object Structure": {
+                    icon: "star-fill",
+                    left: {
+                        header: "JavaScript Object Structure",
+                        text: "Objects in JavaScript are pretty much blocks that are enclosed by curly braces, which are {these guys}. The contents of these curly braces are then made up of \"key/value pairs\", and separated by commas. A key/value pair is separated by a colon."
+                    },
+                    right: {
+                        header: "Example",
+                        image: "object-example.jpg",
+                        text: "In this, \"disappointment\" and \"day\" are keys, and \"immeasurable\" and \"ruined\" are their respective values."
+                    }
+                },
+
+                "5b. Object Structure Cont.": {
+                    icon: "star-fill",
+                    left: {
+                        header: "Example",
+                        image: "object-in-object-example.jpg",
+                        text: "Here, you can see that a value can also be an object."
+                    },
+                    right: {
+                        header: "Importance",
+                        text: "I swear I did not subject you to this for no reason! This is handy to know for reading UserData.js, because each tab is an object, and each page is an object. Next, we'll dive into the actual UserData.js!!! Finally!!!!!"
+                    }
+                },
+
+                "6. UserData.js Intro": {
+                    icon: "star-fill",
+                    left: {
+                        header: "Intro",
+                        text: "When you first open the file, you'll see a lot of things. The most important thing is the object that is following \"let UserData = \", so ignore the rest of it. We'll be going through the file in levels or stages, starting from the base level!"
+                    },
+                    right: {
+                        header: "Intro",
+                        image: "user-data-0.jpg",
+                        text: "The value of title is the title of the page, which shows in your browser's tabs."
+                    }
+                },
+
+                "7a. Page Data": {
+                    icon: "star-fill",
+                    left: {
+                        header: "pageData",
+                        image: "user-data-1.jpg",
+                        text: "Moving into the pageData section of UserData, page stuff goes here."
+                    },
+                    right: {
+                        header: "pageData",
+                        text: "The value of pageData is an object, and each key in this object is the name of a page. On the website you're on now, these are \"Home\", \"Features\", \"Tutorial\", and \"Contact\"! Each page's value is an object, each of which has an \"icon\" and \"tabs\" key/value pair."
+                    }
+                },
+
+                "7b. Icons": {
+                    icon: "star-fill",
+                    left: {
+                        header: "Bootstrap Icons",
+                        text: <p>NieReact uses <a href="https://icons.getbootstrap.com/">&gt;Bootstrap Icons&lt;</a> for the page and tab icons! Wherever there's an option for "icon" in the user data file, you can use a Bootstrap Icon for it.</p>
+                    },
+                    right: {
+                        header: "Example",
+                        image: "user-data-2.jpg",
+                        text: "Easy peasy!"
+                    }
+                },
+
+                "8a. Tabs": {
+                    icon: "star-fill",
+                    left: {
+                        header: "Sorry this image is small",
+                        image: "user-data-3.jpg",
+                        text: "Here's where the tab information goes for a given page."
+                    },
+                    right: {
+                        header: "Explanation",
+                        text: "Each tab has an icon, and a left and right object. The left and right objects correspond to the contents of the middle and right boxes of the page. Both of these objects have a \"header\" and \"text\", which will fill in the header (black bar) and the text content for the box."
+                    }
+                },
+
+                "8b. Tab Images": {
+                    icon: "star-fill",
+                    left: {
+                        header: "Tab Images",
+                        text: "Optionally, you can add an image to a box! Simply by adding a \"image\" key to either the left or right object, with the value corresponding to the name of an image in the images folder of userFiles (case sensitive!). Order does not matter with keys, however! It could go header-image-text, or image-header-text; all work."
+                    },
+                    right: {
+                        header: "Example (sorry for small image)",
+                        image: "user-data-4.jpg",
+                        text: "Here's the tab from the previous step, but with the image key added to it."
+                    }
+                },
+
+                "9a. Extra Notes": {
+                    icon: "star-fill",
+                    left: {
+                        header: "Adding new pages/tabs",
+                        text: "The easiest way to add a new page/tab is by simply copying an existing one. You'll want to copy from the name of the page/tab until the closing curly bracket for it, then add a comma after that curly bracket, then paste what you've copied."
+                    },
+                    right: {
+                        header: "Misc notes",
+                        text: <p>
+                            - A base template UserData.js file can be found already in the userFiles folder in the forked repository. Additionally, the UserData.js for this site can be found in extraUserFiles!<br/>
+                            - Instead of text in quotation marks, you can use HTML elements in the object file. An example is in the UserData.js file for this site.
+                        </p>
+                    }
+                },
+
+                "9b. Extra Extra Notes": {
+                    icon: "star-fill",
+                    left: {
+                        header: "Quotation Marks",
+                        text: "If you want to have a quotation mark inside of the text for a tab, you'll need to have a backslash (this guy -> \\) before each. So it'll look like this: \\\""
+                    },
+                    right: {
+                        header: "I can't think of more notes",
+                        text: "But I have this extra box! What ever shall I do..... Well, if I have more notes in the future, they'll go here!"
+                    }
+                },
+
+                "10. Making It Live": {
+                    icon: "star-fill",
+                    left: {
+                        header: "Making it live",
+                        text: "Open up a command prompt in the main directory (the one with the \"src\" and \"public\" folder and such), and type \"npm run deploy\". This will probably take a while, so don't stress if it does! You also repeat this step if you end up making changes to the UserData.js."
+                    },
+                    right: {
+                        header: "Done",
+                        image: "placeholder-klaus.jpg",
+                        text: "If you followed all previous steps, the website should be up and running!"
                     }
                 }
 
@@ -171,27 +281,27 @@ let UserData = {
             icon: "person-fill",
             tabs: {
 
-                "Testt": {
-                    icon: "archive",
+                "Twitter": {
+                    icon: "twitter",
                     left: {
-                        header: "left header",
-                        text: "left texte"
+                        header: "Coding account",
+                        text: <p>The account that I tweet about coding/projects on is <a href="https://twitter.com/_lumens">&gt;@_lumens&lt;</a>. If you want to see what I'm working on, check out that account!</p>
                     },
                     right: {
-                        header: "right header",
-                        text: "right texte"
+                        header: "Main account",
+                        text: <p>My main Twitter account is <a href="https://twitter.com/daveharwood_">&gt;@daveharwood_&lt;</a>. I tweet a lot, and about a lot of random interests, so I don't recommend following me here, but feel free to!</p>
                     }
                 },
 
-                "Other One": {
-                    icon: "archive",
+                "GitHub/Ko-fi": {
+                    icon: "house-fill",
                     left: {
-                        header: "left header",
-                        text: "left textr"
+                        header: "GitHub",
+                        text: <p>My GitHub account is <a href="https://github.com/tortoisetea">&gt;tortoisetea&lt;</a>! You can see my cool repositories, which I do not have many of, because a lot of them are private.</p>
                     },
                     right: {
-                        header: "right header",
-                        text: "right textr"
+                        header: "Ko-fi",
+                        text: <p>If you are thinking "wow this is cool and I have an excess of money for reasons I will not divulge and would like to give some to this guy", my Ko-fi is <a href="https://ko-fi.com/lumens">&gt;lumens&lt;</a>! Don't send me money if you need it or are saving up for a cool Klaus von Reinherz figurine though! I understand!</p>
                     }
                 }
 
