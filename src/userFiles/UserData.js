@@ -49,6 +49,18 @@ let UserData = {
                         header: "Site practices",
                         text: "On this site, if you see anything enclosed in >this sort of thing<, that'll be a link. Not this time though, but every other time."
                     }
+                },
+
+                "Extra Credits": {
+                    icon: "question-circle-fill",
+                    left: {
+                        header: "Extra credits",
+                        text: "Obviously, this website is heavily based off of NieR:Automata! The website icon, as well as the font, are directly taken from the game. Everything else was custom made to look like it's from the game. Thank you, Yoko Taro, for being based."
+                    },
+                    right: {
+                        header: "Extra credits",
+                        text: <p>I originally used <a href="https://github.com/gitname/react-gh-pages">&gt;this guide&lt;</a> for directly pushing the build from the command prompt, before deciding to just do manual stuff so that Git wouldn't be required to install. But still, it's a great guide and I used it!</p>
+                    }
                 }
 
             }
@@ -251,8 +263,8 @@ let UserData = {
                         text: "If you want to have a quotation mark inside of the text for a tab, you'll need to have a backslash (this guy -> \\) before each. So it'll look like this: \\\""
                     },
                     right: {
-                        header: "I can't think of more notes",
-                        text: "But I have this extra box! What ever shall I do..... Well, if I have more notes in the future, they'll go here!"
+                        header: "Custom icon",
+                        text: "If you want to have a custom icon for your site, you'll need to go into the public folder (not src!) and replace favicon.ico with an icon of your own."
                     }
                 },
 
