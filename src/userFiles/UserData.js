@@ -105,7 +105,7 @@ let UserData = {
                     icon: "star-fill",
                     left: {
                         header: "Download & setup",
-                        text: <p>Download niereact-v1.0.zip from <a href="https://github.com/tortoisetea/niereact/releases/tag/v1.0">&gt;here&lt;</a>, and unzip. Then, you'll need to open a command prompt in the niereact folder, and run "npm install". Please note that this step may take a bit.</p>
+                        text: <p>Download niereact-v1.0.zip from <a href="https://github.com/tortoisetea/niereact/releases">&gt;here&lt;</a>, and unzip. Then, you'll need to open a command prompt in the niereact folder, and run "npm install". Please note that this step may take a bit.</p>
                     },
                     right: {
                         header: "Previewing the site",
@@ -238,7 +238,7 @@ let UserData = {
                     right: {
                         header: "Misc notes",
                         text: <p>
-                            - A base template UserData.js file can be found already in the userFiles folder in the forked repository. Additionally, the UserData.js for this site can be found in extraUserFiles!<br/>
+                            - The userFiles folder for this site can be found in tutorial-site-files.zip on the <a href="https://github.com/tortoisetea/niereact/releases">&gt;releases page&lt;</a>.<br/>
                             - Instead of text in quotation marks, you can use HTML elements in the object file. An example is in the UserData.js file for this site.
                         </p>
                     }
