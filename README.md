@@ -5,4 +5,4 @@ Carrd. I was happy with how it looked, but the source code wasn't very good. I l
 project, liked it, and then figured I should remake the website but with React, and also with an easier to modify
 JSON file. Now you, too, can have a cool NieR website! *Wow!!!!!!!!*
 
-This is gonna be edited later with more info.
+Please check the tutorial/showcase website for more information!! There's a guide and everything. [Click here to go to it!](https://tortoisetea.github.io/niereact/)
