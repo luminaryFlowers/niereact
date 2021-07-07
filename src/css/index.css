@@ -23,7 +23,7 @@ body {
   margin: 0;
   background-color: #CDC8B0;
   color: #4E4B42;
-  font-family: "Nier Rodin", sans-serif;
+  font-family: "Nier Rodin", Arial, sans-serif;
   font-size: 15.01pt;
   overflow-x: hidden;
 }
@@ -36,10 +36,6 @@ a {
 p {
   margin: 0;
   overflow-y: auto;
-}
-
-p, button {
-  font-weight: bold;
 }
 
 .clearfix {
