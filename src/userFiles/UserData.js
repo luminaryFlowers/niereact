@@ -21,8 +21,8 @@ let UserData = {
                         text: "This is a sample website for NieReact! This website contains a guide on how to get your own NieR:Automata themed website up and running."
                     },
                     right: {
-                        header: "Sample Image",
-                        text: "idk what to put here lol",
+                        header: "Cool Image!",
+                        text: "I'm gonna put this image in my projects because it's nice! From Kekkai Sensen :)",
                         image: "placeholder-klaus.jpg"
                     }
                 },
