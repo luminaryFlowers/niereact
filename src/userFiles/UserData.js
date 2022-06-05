@@ -43,7 +43,7 @@ let UserData = {
                     icon: "question-circle-fill",
                     left: {
                         header: "Who made it?",
-                        text: "I did! Me! Wow! I'm Aidan, but I also go by Dave online, but I'm also using the name Lumen, or lumens, for coding accounts. You can find info on how to contact me, or look at my GitHub, or buy me a coffee, on the contact page!"
+                        text: "I did! Me! Wow! I'm Aidan, but I'm also using the name Lumen, or lumens, for coding accounts. You can find info on how to contact me, or look at my GitHub, or buy me a coffee, on the contact page!"
                     },
                     right: {
                         header: "Site practices",
@@ -287,15 +287,15 @@ let UserData = {
             icon: "person-fill",
             tabs: {
 
-                "Twitter": {
-                    icon: "twitter",
+                "Site/Tumblr": {
+                    icon: "globe2",
                     left: {
-                        header: "Coding account",
-                        text: <p>The account that I tweet about coding/projects on is <a href="https://twitter.com/_lumens">&gt;@_lumens&lt;</a>. If you want to see what I'm working on, check out that account!</p>
+                        header: "Personal Site",
+                        text: <p>I have a personal site where I have some projects I'm working on! I don't know if I'll remember to update this later, but right now it's just Homestuck-related projects. Anyway, find it <a href="https://lumens.live/">&gt;here&lt;</a>!</p>
                     },
                     right: {
-                        header: "Main account",
-                        text: <p>My main Twitter account is <a href="https://twitter.com/daveharwood_">&gt;@daveharwood_&lt;</a>. I tweet a lot, and about a lot of random interests, so I don't recommend following me here, but feel free to!</p>
+                        header: "Coding/Project Tumblr",
+                        text: <p>I have a Tumblr account where I sometimes post about stuff I'm working on! Check it out <a href="https://lumenscode.tumblr.com/">&gt;here&lt;</a>!</p>
                     }
                 },
 
@@ -303,7 +303,7 @@ let UserData = {
                     icon: "house-fill",
                     left: {
                         header: "GitHub",
-                        text: <p>My GitHub account is <a href="https://github.com/tortoisetea">&gt;tortoisetea&lt;</a>! You can see my cool repositories, which I do not have many of, because a lot of them are private.</p>
+                        text: <p>My GitHub account is <a href="https://github.com/luminaryFlowers">&gt;luminaryFlowers&lt;</a>! You can see my cool repositories, which I do not have many of, because a lot of them are private.</p>
                     },
                     right: {
                         header: "Ko-fi",
